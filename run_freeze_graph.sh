@@ -1,0 +1,1 @@
+python freeze_graph.py -bert_model_dir /work/dl/pretrained-model/chinese_L-12_H-768_A-12 -model_dir ./output/certificate

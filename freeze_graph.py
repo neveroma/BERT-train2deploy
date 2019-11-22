@@ -202,7 +202,7 @@ def optimize_class_model(args, logger=None):
         
         # 存储二进制模型到文件中
         logger.info('write graph to a tmp file: %s' % pb_file)
-        with tf.gfile.GFile(pb_file, 'wb') as f:
+        with tf.io.gfile.GFile(pb_file, 'wb') as f:
             f.write(tmp_g.SerializeToString())
         return pb_file
     except Exception as e:
